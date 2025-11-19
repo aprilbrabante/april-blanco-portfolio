@@ -41,11 +41,11 @@
                                     </a>
                                 </div>
 
-                                <button type="submit" class="btn btn-outline-light my-3  submit-btn" id="submit" :disabled="isLoading">
-                                    {{ isLoading ? "Sending.." : "Submit" }}
-                                </button>
-
                                 <div class="d-flex justify-content-end mt-2">
+                                    <button type="submit" class="btn btn-outline-light my-3  submit-btn" id="submit" :disabled="isLoading">
+                                        {{ isLoading ? "Sending.." : "Submit" }}
+                                    </button>
+
                                     <div ref="recaptchaContainer"></div>
                                 </div>
                             </div>

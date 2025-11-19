@@ -41,6 +41,10 @@
                             <button type="submit" class="btn btn-outline-light my-3 float-end submit-btn" id="submit" :disabled="isLoading">
                                 {{ isLoading ? "Sending.." : "Submit" }}
                             </button>
+
+                            <div class="d-flex justify-content-end mt-2">
+                                <div ref="recaptchaContainer"></div>
+                            </div>
                         </form>
                     </div>
                     

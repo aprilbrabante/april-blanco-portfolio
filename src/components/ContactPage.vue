@@ -107,6 +107,9 @@
                 console.log(result);
                 isLoading.value = false;
                 notyf.success("Message sent!");
+                name.value = "";
+                email.value = "";
+                message.value = "";
             }
         } catch (error) {
             console.log(error);

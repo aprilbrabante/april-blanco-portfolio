@@ -27,28 +27,35 @@
                             </div>
 
                             <div class="form-footer">
-                                <div class="social-icons">
-                                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" height="30px">
-                                    </a>
+                                <div class="row align-items-center">
+                                    
+                                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                                            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" height="30">
+                                            </a>
 
-                                    <a href="https://github.com/yourusername" target="_blank">
-                                        <img src="https://gitlab.com/uploads/-/system/project/avatar/278964/project_avatar.png" alt="" height="30px">
-                                    </a>
+                                            <a href="https://github.com/yourusername" target="_blank">
+                                                <img src="https://gitlab.com/uploads/-/system/project/avatar/278964/project_avatar.png" alt="" height="30">
+                                            </a>
 
-                                    <a href="https://github.com/yourusername" target="_blank">
-                                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="" height="30px">
-                                    </a>
-                                </div>
+                                            <a href="https://github.com/yourusername" target="_blank">
+                                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="" height="30">
+                                            </a>
+                                        </div>
+                                    </div>
 
-                                <div class="d-flex justify-content-end mt-2">
-                                    <button type="submit" class="btn btn-outline-light my-3  submit-btn" id="submit" :disabled="isLoading">
-                                        {{ isLoading ? "Sending.." : "Submit" }}
-                                    </button>
+                                    <div class="col-12 col-md-6 text-center text-md-end">
+                                        <button type="submit" class="btn btn-outline-light my-3 submit-btn" id="submit" :disabled="isLoading">
+                                            {{ isLoading ? "Sending.." : "Submit" }}
+                                        </button>
 
-                                    <div ref="recaptchaContainer"></div>
+                                        <div ref="recaptchaContainer" class="d-inline-block"></div>
+                                    </div>
+
                                 </div>
                             </div>
+
                         </form>
                     </div>
                     

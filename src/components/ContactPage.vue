@@ -28,27 +28,21 @@
 
                             <div class="form-footer">
                                 <div class="social-icons">
-                                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="" height="30px">
-                                    </a>
-
-                                    <a href="https://github.com/yourusername" target="_blank">
-                                        <img src="https://gitlab.com/uploads/-/system/project/avatar/278964/project_avatar.png" alt="" height="30px">
-                                    </a>
-
-                                    <a href="https://github.com/yourusername" target="_blank">
-                                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="" height="30px">
-                                    </a>
+                                    <a href="https://www.linkedin.com/in/charles-babbage-8291a6211/" id="linkedin"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://gitlab.com/cbabbage0991" id="gitlab"><i class="fab fa-gitlab"></i></a>
+                                    <a href="https://github.com/cbabbage0991" id="github"><i class="fab fa-github"></i></a>
                                 </div>
+                                <button type="submit" class="btn btn-outline-light pl-5 pr-5" :disabled="isLoading">
+                                    {{ isLoading ? "Sending.." : "Submit" }}
+
+
+                                </button>
 
                                 <div class="d-flex justify-content-end mt-2">
-                                    <button type="submit" class="btn btn-outline-light my-3  submit-btn" id="submit" :disabled="isLoading">
-                                        {{ isLoading ? "Sending.." : "Submit" }}
-                                    </button>
-
                                     <div ref="recaptchaContainer"></div>
                                 </div>
                             </div>
+
                         </form>
                     </div>
                     

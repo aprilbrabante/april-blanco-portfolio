@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+    font-family: "Raleway", sans-serif!important;
+}
+
+navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white!important;
+    background-color: black;
+}
+
+/* .main {
+    background: url(./images/me.png)no-repeat;
+    background-size: contain;
+    
+    background-position: center;
+    width: 100%;
+    height: 95vh;
+} */
+
+.main {
+    background-color: whitesmoke;
+}
+
+#profilePic {
+    background: url(./images/me.png)no-repeat;
+    background-size: contain;
+    /* background-color: red; */
+    background-position: center;
+    min-height: 500px;   
+    /* border-radius: 100%; */
+}
+
+.main h3, h1 {
+    color: rgb(1, 141, 176);
+}
+
+.main h4 {
+    color: rgb(209, 136, 79);
+}
+
+.main h6 {
+    color: #ED5565;
+}
+
+.main .bt1 {
+    height: 55px;
+    width: 138px;
+    background-color: rgb(233, 20, 109);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 32px;
+	border-radius: 999px;
+}
+
+.main .bt1:hover {
+    background-color: rgb(202, 18, 95);
+    transition: 0.5s;
+}
+
+/* #profilePic {
+    max-height: 600px;
+} */
+
+.main img {
+    box-shadow: 10px 10px 5px 0px rgba(219,178,178,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(219,178,178,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(219,178,178,0.75);
+}
+
+.progress {
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+}
+
+.pro-value1 {
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: #ED5565;
+    height: 25px;
+    width: 0;
+}
+
+.progress p {
+    color: white;
+    padding-left: 20px!important;
+
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 98%;
+    }
+}
+
+#submit {
+	color: #FFFFFF;
+    font-weight: bold;
+	padding: 12px 32px;
+	border-radius: 999px;
+	background-color: rgb(202, 18, 95);
+}
+
+footer {
+	background: #B59066;
+	line-height: 100%;
+
+}
+
+.section-color {
+    color: #48CFAD;
+}

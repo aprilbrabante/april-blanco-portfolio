@@ -1,6 +1,9 @@
 <template>
-    <div class="col-12 col-md-4">
-        <div class="card h-100 rounded shadow">
+    <div class="col-12 col-md-6">
+        <div class="card h-100 rounded shadow"
+            @click="openLink(project.url)"
+            style="cursor: pointer;"
+        >
             <img :src="project.image" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
@@ -18,4 +21,8 @@
     defineProps({
         project: Object
     })
+
+    function openLink(url) {
+    window.open(url, "_blank"); // "_blank" opens in a new tab
+    }
 </script>
